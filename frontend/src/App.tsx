@@ -6,17 +6,16 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <h1>Hello</h1>
-    // <div>
-    //   <Router>
-    //     <Routes>
-    //       <Route path="/" element={<Home />} />
-    //       <Route path="/projects" element={<Projects />} />
-    //       <Route path="/about" element={<About />} />
-    //       <Route path="/contact" element={<Contact />} />
-    //     </Routes>
-    //   </Router>
-    // </div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
