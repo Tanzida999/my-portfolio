@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <div>
+      <h1>Hello From sara</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
