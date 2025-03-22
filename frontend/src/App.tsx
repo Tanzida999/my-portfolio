@@ -5,10 +5,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import "./index.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen !bg-[#0e0c1e] text-white">
       <Router>
         <Header />
         <main className="container mx-auto py-10 px-6">
