@@ -1,30 +1,7 @@
-import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import banner from "../../src/images/banner.png";
 
 const Home = () => {
-  const images = [
-    "https://images.pexels.com/photos/1193747/pexels-photo-1193747.jpeg", // Image 1
-    "https://images.pexels.com/photos/1561947/pexels-photo-1561947.jpeg", // Image 2
-    "https://images.pexels.com/photos/3787596/pexels-photo-3787596.jpeg", // Image 3
-  ];
-
-  const [currentImage, setCurrentImage] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((prevImage) =>
-      prevImage === 0 ? images.length - 1 : prevImage - 1
-    );
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white px-6">
       <div className="max-w-3xl text-center">
@@ -37,26 +14,18 @@ const Home = () => {
           beautiful and efficient digital experiences.
         </p>
 
-        {/* Slideshow */}
-        <div className="relative mb-6">
-          <img
-            src={images[currentImage]}
-            alt="Slideshow Image"
-            className="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-lg shadow-lg"
-          />
-          <button
-            onClick={prevImage}
-            className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          >
-            &#60;
-          </button>
-          <button
-            onClick={nextImage}
-            className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          >
-            &#62;
-          </button>
+        <div className="container ">
+          <img src={banner} className="w-[400px] h-[300px]" alt="" />
         </div>
+
+        {/* Banner Image */}
+        {/* <div className="container ml-40">
+          <img
+            src={banner}
+            alt="Banner Image"
+            className="w-[400px] h-[200px] rounded-lg shadow-lg"
+          />
+        </div> */}
 
         <div className="flex gap-4 justify-center">
           <a
