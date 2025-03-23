@@ -93,6 +93,39 @@ const About = () => {
                 ></div>
               </div>
             </div>
+            <div>
+              <label htmlFor="" className="block text-sm font-medium mb-1">
+                Back-end
+              </label>
+              <div className="w-full bg-white/10 rounded-full h-2">
+                <div
+                  className="bg-emerald-300 h-2 rounded-full"
+                  style={{ width: "75%" }}
+                ></div>
+              </div>
+            </div>
+            <div>
+              <label htmlFor="" className="block text-sm font-medium mb-1">
+                Database
+              </label>
+              <div className="w-full bg-white/10 rounded-full h-2">
+                <div
+                  className="bg-emerald-300 h-2 rounded-full"
+                  style={{ width: "60%" }}
+                ></div>
+              </div>
+            </div>
+          </div>
+          <h3 className="text-2xl font-bold mt-4 mb-2">04. Approach</h3>
+          <p className="text-white/50">
+            I beilive in writing clean, maintainable code and try to follow best
+            practices. My approach involves understanding client needs,
+            planning, throrougly nd delivering high-quality solutions on time.
+          </p>
+        </div>
+        <div className="border border-white/20 rounded-lg p-6 flex-flex-col justify-between">
+          <div className="relative border borer-white/20 rounded-lg p-4 h-[200px] overflow-hidded">
+            <img src="" alt="" />
           </div>
         </div>
       </div>
