@@ -5,7 +5,7 @@ const About = () => {
       <h2 className="text-6xl font-bol mb-8">
         About <span className="text-emerald-300">Me</span>
       </h2>
-      <div className="grid grid-cols-1 mb:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="border border-white/30 rounded-lg p-6">
           <h3 className="text-2xl font-bold mb-2">01. Background</h3>
           <p className="text-white/50 mb-6">
@@ -59,14 +59,40 @@ const About = () => {
             expanding my skill set to stay at the forefront of web development
             and branding.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="border border-white/20 rounded-lg p-3">
             <h4 className="text-emerald-300 font-medium mb-2">Frontend</h4>
             <ul className="text-white/50 space-y-1 text-sm">
               <li>React/Next.js</li>
               <li>Typescript</li>
+              <li>Javascript</li>
               <li>Tailwind CSS</li>
               <li>Framer Motion</li>
             </ul>
+          </div>
+          <div className="border border-white/20 rounded-lg p-3">
+            <h4 className="text-emerald-300 font-medium mb-2">Backend</h4>
+            <ul className="text-white/50 space-y-1 text-sm">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDb</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="border border-white/20 rounded-lg p-6">
+          <div className="space-y-4">
+            <div>
+              <label htmlFor="" className="block text-sm font-medium mb-1">
+                Front-end
+              </label>
+              <div className="w-full bg-white/10 rounded-full h-2">
+                <div
+                  className="bg-emerald-300 h-2 rounded-full"
+                  style={{ width: "90%" }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
