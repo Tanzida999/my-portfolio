@@ -1,3 +1,4 @@
+import project1 from "../../src/images/project-1.png";
 const About = () => {
   return (
     <section id="about" className="text-white p-8">
@@ -33,6 +34,22 @@ const About = () => {
               &nbsp;'Solidity',
               <br />]
             </code>
+          </div>
+        </div>
+        <div className="border border-white/20 rounded-lg p-6">
+          <h3 className="text-2xl font-bold mb-2">02. Expertise</h3>
+          <p className="text-white/50">
+            I specialize in building robust and scalable web applications using
+            modern technologies. My Expertise spans both front-end and back-end
+            development, allowing me to create seamless, end-to-end solutions. I
+            also design logo, business card, banner, also websites.
+          </p>
+          <div className="mt-4 relative border border-white/20 rounded-lg p-4 h-[220px] overflow-hidden">
+            <img
+              src={project1}
+              className="absolute inset-0 w-full h-full object-cover"
+              alt=""
+            />
           </div>
         </div>
       </div>
