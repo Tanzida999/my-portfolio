@@ -48,8 +48,25 @@ const About = () => {
             <img
               src={project1}
               className="absolute inset-0 w-full h-full object-cover"
-              alt=""
+              alt="Project 1"
             />
+          </div>
+        </div>
+        <div className="border border-white/20 rounded-lg p-6">
+          <h3 className="text-2xl font-bold mb-2">03. Skills</h3>
+          <p className="text-white/50 mb-4">
+            I'm proficient in a wide range of technologies and constantly
+            expanding my skill set to stay at the forefront of web development
+            and branding.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <h4 className="text-emerald-300 font-medium mb-2">Frontend</h4>
+            <ul className="text-white/50 space-y-1 text-sm">
+              <li>React/Next.js</li>
+              <li>Typescript</li>
+              <li>Tailwind CSS</li>
+              <li>Framer Motion</li>
+            </ul>
           </div>
         </div>
       </div>
