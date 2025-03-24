@@ -61,7 +61,7 @@ const About = () => {
             expanding my skill set to stay at the forefront of web development
             and branding.
           </p>
-          <div className="border border-white/20 rounded-lg p-3">
+          <div className="border border-white/20 text-center rounded-lg p-3">
             <h4 className="text-purple-500 font-medium mb-2">Frontend</h4>
             <ul className="text-white/50 space-y-1 text-sm">
               <li>React/Next.js</li>
@@ -71,7 +71,7 @@ const About = () => {
               <li>Framer Motion</li>
             </ul>
           </div>
-          <div className="border border-white/20 rounded-lg p-3 mt-4">
+          <div className="border text-center border-white/20 rounded-lg p-3 mt-4">
             <h4 className="text-purple-500 font-medium mb-2">Backend</h4>
             <ul className="text-white/50 space-y-1 text-sm">
               <li>Node.js</li>
