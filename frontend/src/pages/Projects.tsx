@@ -66,6 +66,16 @@ const Projects = () => {
                 <h3 className="text-4xl font-semibold">
                   {portfolioProject.title}
                 </h3>
+                <div className="flex items-center space-x-4">
+                  <span className="text-3xl font-light text-purple-300">
+                    0{index + 1}
+                  </span>
+                  <FiChevronDown
+                    className={`w-6 h-6 transform transition-transform ${
+                      expandedIndex === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
               </div>
             </motion.div>
           ))}
