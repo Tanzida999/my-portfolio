@@ -53,7 +53,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="text-white py-24 md:py-64" id="portfolio">
+    <div className="text-white pt-16 md:pt-26 pb-20 md:pb-40" id="portfolio">
       <div className="container mx-auto px-4">
         <h2 className="text-6xl font-bold text-center mb-16">
           Selected <span className="text-purple-500">Projects</span>
