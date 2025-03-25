@@ -12,7 +12,7 @@ const portfolioProjects = [
     desc: "Lorem",
     devstack: "MongoDB, Express, React, Node.js",
     link: "#",
-    git: "#",
+    git: "https://github.com/Tanzida999/E-Commerce-Websiite",
     src: project1,
     type: "fullstack",
   },
@@ -30,7 +30,16 @@ const portfolioProjects = [
     desc: "Lorem",
     devstack: "MongoDB, Express, React, Node.js",
     link: "#",
-    git: "#",
+    git: "https://github.com/Tanzida999/my-portfolio",
+    src: project1,
+    type: "Frontend",
+  },
+  {
+    title: "Akino Portfolio Website",
+    desc: "Lorem",
+    devstack: "HTML, CSS",
+    link: "https://tanzida999.github.io/akinoportfolio/",
+    git: "https://github.com/Tanzida999/akinoportfolio",
     src: project1,
     type: "Frontend",
   },
@@ -77,6 +86,51 @@ const Projects = () => {
                   />
                 </div>
               </div>
+              <AnimatePresence>
+                {expandedIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="px-6 pb-6 bg-black/2- border border-white/10"
+                  >
+                    {" "}
+                    <div className="flex flex-col md:flex-row gap-8">
+                      <img
+                        src={portfolioProject.src}
+                        alt={portfolioProject.title}
+                        className="w-full md:w-1/2 h-64 object-cover rounded-lg"
+                      />
+                      <div className="flex-1">
+                        <p className="text-white/70 mb-4">
+                          {portfolioProject.desc}
+                        </p>
+                        <p className="text-purple-300 font-medium mb-2">
+                          Stack: {portfolioProject.devstack}
+                        </p>
+                        <p className="text-purple-400/60 font-medium mb-4 capitalize">
+                          Type:{portfolioProject.type}
+                        </p>
+                        <div className="flex justify-start items-center space-x-4">
+                          <a
+                            href={portfolioProject.link}
+                            className="text-purple-400 hover:text-blue-300 transition-colors"
+                          >
+                            <HiOutlineExternalLink />
+                          </a>
+                          <a
+                            href={portfolioProject.git}
+                            className="text-gray-400 hover:text-gray-300 transition-colors"
+                          >
+                            <FaGithub />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </motion.div>
           ))}
         </div>
