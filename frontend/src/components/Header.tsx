@@ -36,6 +36,12 @@ const Header = () => {
           >
             Contact
           </Link>
+          <Link
+            to="/stack"
+            className="px-4 py-2 text-white rounded-lg transition duration-300 hover:bg-blue-500"
+          >
+            Stack
+          </Link>
         </nav>
       </div>
     </header>
