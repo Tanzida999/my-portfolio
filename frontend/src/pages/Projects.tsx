@@ -3,6 +3,7 @@ import { useState } from "react";
 import project1 from "../../src/images/project-1.png";
 import project3 from "../../src/images/my-portfolio.png";
 import project2 from "../../src/images/mothers-secretprecipee.png";
+import project4 from "../../src/images/Alpha.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
@@ -42,6 +43,15 @@ const portfolioProjects = [
     link: "https://tanzida999.github.io/akinoportfolio/",
     git: "https://github.com/Tanzida999/akinoportfolio",
     src: project1,
+    type: "Frontend",
+  },
+  {
+    title: "Alpha Clash Pro",
+    desc: "Lorem",
+    devstack: "HTML, CSS",
+    link: "https://magical-marshmallow-04d932.netlify.app/",
+    git: "https://github.com/Tanzida999/alpha-clash-pro",
+    src: project4,
     type: "Frontend",
   },
 ];

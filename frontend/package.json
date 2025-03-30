@@ -30,7 +30,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://tanzida999.github.io/my-portfolio",
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
