@@ -31,7 +31,7 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 bg-[#732D91] rounded-full font-medium hover:bg-[#732D91] transition-colors"
           >
-            Contact Me
+            Contact With Me
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
