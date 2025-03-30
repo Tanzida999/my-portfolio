@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import project1 from "../../src/images/project-1.png";
-import project2 from "../../src/images/project-2.png";
+import project3 from "../../src/images/my-portfolio.png";
+import project2 from "../../src/images/mothers-secretprecipee.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
@@ -17,12 +18,12 @@ const portfolioProjects = [
     type: "fullstack",
   },
   {
-    title: "Interactive E-Learning Platform",
+    title: "Mothers secret Recipe",
     desc: "Lorem",
     devstack: "MongoDB, Express, React, Node.js",
-    link: "#",
-    git: "#",
-    src: project1,
+    link: "https://silly-granita-f4b8be.netlify.app/",
+    git: "https://github.com/Tanzida999/E-Commerce-Websiite",
+    src: project2,
     type: "Frontend",
   },
   {
@@ -31,7 +32,7 @@ const portfolioProjects = [
     devstack: "MongoDB, Express, React, Node.js",
     link: "#",
     git: "https://github.com/Tanzida999/my-portfolio",
-    src: project1,
+    src: project3,
     type: "Frontend",
   },
   {
