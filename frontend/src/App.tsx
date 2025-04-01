@@ -11,12 +11,12 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Stack from "./pages/Stack";
-
+import DarkModeToggle from "./components/DarkModeToggle";
 import "./index.css";
 
 const App = () => {
   return (
-    <div className="min-h-screen !bg-[#0e0c1e] text-white">
+    <div className="min-h-screen bg-white text-black dark:bg-[#0e0c1e] dark:text-white transition-all">
       <Router>
         <Header />
         <main className="container mx-auto py-10 px-6">
@@ -37,6 +37,7 @@ const App = () => {
 const HomePage = () => {
   return (
     <>
+      {/* <DarkModeToggle /> */}
       <Home />
       <About />
       <Projects />
