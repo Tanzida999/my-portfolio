@@ -16,7 +16,7 @@ import "./index.css";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-black text-white dark:bg-[#0e0c1e] dark:text-white transition-all">
+    <div className="min-h-screen bg-black text-white transition-all">
       <Router>
         <Header />
         <main className="container mx-auto py-10 px-6">
