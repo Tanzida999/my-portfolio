@@ -49,7 +49,28 @@ const Stack = () => {
         <h2 className="text-7xl text-gray-100 font-bold mb-20">My Stack</h2>
         <div className="flex flex-wrap justify-center gap-8" ref={ref}>
           {stackItems.map((item, index) => (
-            <motion.div key={item.id}></motion.div>
+            <motion.div
+              key={item.id}
+              custom={index}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                hidden: (index) => ({
+                  opacity: 0,
+                  y: index % 2 === 0 ? -100 : 100,
+                }),
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 1.5,
+                  },
+                },
+              }}
+              className="bg-white/10 flex flex-col items-center justify-center w-[200px] h-[200px] roounded-x1 p-4 shadow-lg hover:shadow-2xl"
+            >
+              <div className={`mb-4 ${item.color}`}>{item.icon}</div>
+            </motion.div>
           ))}
         </div>
       </section>
